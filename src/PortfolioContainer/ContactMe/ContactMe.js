@@ -130,22 +130,26 @@ export default function ContactMe(props) {
       <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
       <div className="central-form">
         <div className="col">
-          <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch📧", 1000]} />
-          </h2>{" "}
-          <a href="https://github.com/vd02">
-            <i className="fa fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/varun-dixit-997b93201/">
-            <i className="fa fa-linkedin"></i>
-          </a>
-          <a href="mailto:dixitvarun0208@gmail.com">
-            <i className="fa fa-google"></i>
-          </a>
+          <div>
+            <h2 className="title">
+              <Typical loop={Infinity} steps={["Get In Touch📧", 1000]} />
+            </h2>{" "}
+          </div>
+          <div>
+            <a href="https://github.com/vd02">
+              <i className="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/varun-dixit-997b93201/">
+              <i className="fa fa-linkedin"></i>
+            </a>
+            <a href="mailto:dixitvarun0208@gmail.com">
+              <i className="fa fa-google"></i>
+            </a>
+          </div>
         </div>
         <div className="back-form">
           <div className="img-back">
-            <h4>Send Your Email Here!</h4>
+            {/* <h4>Send Your Email Here!</h4> */}
             <img src={imgBack} alt="not found" />
           </div>
           <form method="POST">

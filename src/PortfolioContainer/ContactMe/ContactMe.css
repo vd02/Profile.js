@@ -31,7 +31,7 @@
 
 .back-form .img-back {
   width: 100%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .img-back h4 {
@@ -45,7 +45,7 @@
 
 .back-form .img-back img {
   width: 100%;
-  /* height: 20%; */
+  height: 16rem;
   /* opacity: 0.5; */
 }
 
@@ -133,6 +133,12 @@ button .load {
 button .load img {
   width: 60px;
   color: green;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .col i {
   padding: 10px;

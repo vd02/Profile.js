@@ -3,11 +3,11 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
-import educationLogo from "../../assets/Resume/graduation-cap.png";
-import workHistoryLogo from "../../assets/Resume/work-history.svg";
-import progSkillsLogo from "../../assets/Resume/programming-skills.svg";
-import projectsLogo from "../../assets/Resume/projects.svg";
-import interestsLogo from "../../assets/Resume/interests.svg";
+// import educationLogo from "../../assets/Resume/education.svg";
+// import workHistoryLogo from "../../assets/Resume/work-history.svg";
+// import progSkillsLogo from "../../assets/Resume/programming-skills.svg";
+// import projectsLogo from "../../assets/Resume/projects.svg";
+// import interestsLogo from "../../assets/Resume/interests.svg";
 
 const Resume = (props) => {
   /* STATES */
@@ -50,11 +50,11 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: { educationLogo } },
-    { label: "Work History", logoSrc: { workHistoryLogo } },
-    { label: "Programming Skills", logoSrc: { progSkillsLogo } },
-    { label: "Projects", logoSrc: { projectsLogo } },
-    { label: "Interests", logoSrc: { interestsLogo } },
+    { label: "Education", logoSrc: "education.svg" },
+    { label: "Work History", logoSrc: "work-history.svg" },
+    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
+    { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   //here we have
@@ -212,7 +212,11 @@ const Resume = (props) => {
         }
         key={index}
       >
-        <img className="bullet-logo" alt="HEHE" />
+        <img
+          className="bullet-logo"
+          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          alt="f"
+        />
         {/* src={bullet.logoSrc} alt="B" */}
         <span className="bullet-label">{bullet.label}</span>
       </div>
