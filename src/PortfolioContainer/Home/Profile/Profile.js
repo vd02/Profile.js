@@ -2,6 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 import ScrollService from "../../../utilities/ScrollService";
+import imgProfile from "../../../assets/Home/profilephoto.png"
 
 export default function Profile() {
   return (
@@ -66,7 +67,9 @@ export default function Profile() {
           </div>
         </div>
         <div className="profile-picture">
-          <div className="profile-picture-background"></div>
+          <div className="profile-picture-background">
+          <img src={imgProfile} alt="not found" />
+          </div>
         </div>
       </div>
     </div>

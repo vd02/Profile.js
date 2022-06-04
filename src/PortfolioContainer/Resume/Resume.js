@@ -19,8 +19,9 @@ const Resume = (props) => {
 
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
+    fadeInScreenHandler
+  );
 
   /* REUSABLE MINOR COMPONENTS */
   const ResumeHeading = (props) => {
@@ -211,7 +212,7 @@ const Resume = (props) => {
         }
         key={index}
       >
-        <img className="bullet-logo" />
+        <img className="bullet-logo" alt="HEHE" />
         {/* src={bullet.logoSrc} alt="B" */}
         <span className="bullet-label">{bullet.label}</span>
       </div>
