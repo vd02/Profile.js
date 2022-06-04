@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Typical from "react-typical";
-import axios from "axios";
-import { toast } from "react-toastify";
+// import Typical from "react-typical";
+// import axios from "axios";
+// import { toast } from "react-toastify";
 
 import imgBack from "../../../src/images/mail1.png";
 import load1 from "../../../src/images/load2.gif";
@@ -131,7 +131,7 @@ export default function ContactMe(props) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
+            <p>Get In Touch📧</p>
           </h2>{" "}
           <a href="https://github.com/vd02">
             <i className="fa fa-github"></i>
