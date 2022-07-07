@@ -39,9 +39,9 @@ export default function Profile() {
                     1200,
                     "Student👨‍🎓",
                     1200,
-                    "Tech Enthusiast💻",
+                    "Tech Lover💻",
                     1200,
-                    "Programmer0️⃣1️⃣",
+                    "Coder0️⃣1️⃣",
                     1200,
                     "Sportsman⛹️‍♂️",
                     1200,
@@ -55,15 +55,15 @@ export default function Profile() {
           </div>
           <div className="profile-options">
             <button
-              className="btn primary-btn"
+              className="btn highlighted-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
               {""}
               Hire Me{" "}
             </button>
-            <a href="Resume.pdf" download="Varun_Dixit_Resume.pdf">
+            {/* <a href="Resume.pdf" download="Varun_Dixit_Resume.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="profile-picture">

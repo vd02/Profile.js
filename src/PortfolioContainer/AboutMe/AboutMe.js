@@ -20,9 +20,9 @@ export default function AboutMe(props) {
         "Frontend web development",
         "Responsive Design & Mobile-First Websites",
         "React",
-        "Data Structures and Algo in Java",
-        "UX and UI knowledge",
-        "Currently learnign to work on backend websites with Node.js",
+        "Data Structures and Algorithms in Java",
+        "UX and UI",
+        "Currently learning to work on backend websites with Node.js",
       ],
       heading: "Here are a Few Highlights:",
     },
@@ -57,15 +57,15 @@ export default function AboutMe(props) {
             </div>
             <div className="about-me-options">
               <button
-                className="btn primary-btn"
+                className="btn highlighted-btn"
                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="Resume.pdf" download="Varun_Dixit_Resume.pdf">
+              {/* <a href="Resume.pdf" download="Varun_Dixit_Resume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

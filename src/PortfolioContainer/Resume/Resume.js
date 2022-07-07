@@ -151,7 +151,7 @@ const Resume = (props) => {
             "Plutonity Investment Advisory and Technology Pvt. Ltd.                                                                            "
           }
           subHeading={
-            "Front-end Developer Intern                                                                                                                 "
+            "Frontend Developer Intern                                                                                                                 "
           }
           fromDate={"May"}
           toDate={"Aug, 2021"}
@@ -164,7 +164,7 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Designed Front-end for the startup’s website using React and
+            - Designed Frontend for the startup’s website using React and
             Material UI.
           </span>
           <br />
