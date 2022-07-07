@@ -19,9 +19,8 @@ const Resume = (props) => {
 
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
-    fadeInScreenHandler
-  );
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   /* REUSABLE MINOR COMPONENTS */
   const ResumeHeading = (props) => {
@@ -59,15 +58,12 @@ const Resume = (props) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "JavaScript", ratingPercentage: 60 },
+    { skill: "React JS", ratingPercentage: 60 },
+    { skill: "Java", ratingPercentage: 70 },
+    { skill: "C", ratingPercentage: 65 },
+    { skill: "HTML", ratingPercentage: 75 },
+    { skill: "CSS", ratingPercentage: 70 },
   ];
 
   const projectsDetails = [
@@ -76,23 +72,28 @@ const Resume = (props) => {
       duration: { fromDate: "2020", toDate: "2021" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      subHeading: "",
     },
     {
-      title: "Mobile E-shop ",
+      title: "React Dhaba ",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Online Food Ordering Website based on React with dynamic loading of menu and receiving of order details through Firebase Realtime Database.",
+      subHeading: "",
     },
     {
-      title: "Ecommerce Website ",
+      title: "Optical Character Recognition",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "JavaScript based Optical Character Recognition (OCR) tool that reads custom written input with the help of Google and Microsoft enabled voice systems with modifiable pitch and voice rate.",
+      subHeading: "",
+    },
+    {
+      title: "Expense Tracker",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "React Expense Tracker that adds up all your credits and debits, displays them and shows up the total balance.",
+      subHeading: "",
     },
   ];
 
@@ -103,6 +104,9 @@ const Resume = (props) => {
         subHeading={"BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE"}
         fromDate={"2020"}
         toDate={"2024"}
+        description={
+          "Relevant Coursework: 📝Introduction to Computing and Programming    📝Data Structures and Algorithms    📝Operating Systems    📝Social Information and Networks"
+        }
       />
 
       <ResumeHeading
@@ -110,6 +114,7 @@ const Resume = (props) => {
         subHeading={"ISC BOARD"}
         fromDate={"2017"}
         toDate={"2019"}
+        description={"🔗Class 12th: 92.4%         🔗Class 10th: 92.8%"}
       />
     </div>,
 
@@ -119,7 +124,7 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"Photomath"}
           subHeading={"Content Curator – Freelance"}
-          fromDate={"May 2020"}
+          fromDate={"May, 2020"}
           toDate={"Present"}
         />
         <div className="experience-description">
@@ -130,12 +135,41 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Creative Problem Solver and Math Expert
+            - Creative Problem Solver and Math Expert.
           </span>
           <br />
           <span className="resume-description-text">
             - Providing solutions to math problems using LaTeX and software like
-            GeoGebra and Figma{" "}
+            GeoGebra and Figma.{" "}
+          </span>
+          <br />
+        </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
+          heading={
+            "Plutonity Investment Advisory and Technology Pvt. Ltd.                                                                            "
+          }
+          subHeading={
+            "Front-end Developer Intern                                                                                                                 "
+          }
+          fromDate={"May"}
+          toDate={"Aug, 2021"}
+        />
+        <div className="experience-description">
+          {/* <span className="resume-description-text">
+            Currently working as MERN stack web and mobile developer and also an
+            online instructor on udemy.
+          </span> */}
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Designed Front-end for the startup’s website using React and
+            Material UI.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Worked on the designing the UI and UX of the mobile app.{" "}
           </span>
           <br />
         </div>
@@ -178,16 +212,16 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Basketball"
+        description="Playing Basketball as a game has not only helped me to stay fit but also has taught me the dedication and patience that goes into a team leadership role."
       />
       <ResumeHeading
         heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+        description="Listening to music of various genres has been my best stress buster. Be it Rap, Classical, Bollywood or any other, music has been my go to place every single time."
       />
       <ResumeHeading
         heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        description="I like to challenge my reflexes while competing in football games, first-person shooter games as they excite and challenge my brain at the same time."
       />
     </div>,
   ];
@@ -215,7 +249,7 @@ const Resume = (props) => {
         <img
           className="bullet-logo"
           src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
-          alt="f"
+          alt=""
         />
         {/* src={bullet.logoSrc} alt="B" */}
         <span className="bullet-label">{bullet.label}</span>
