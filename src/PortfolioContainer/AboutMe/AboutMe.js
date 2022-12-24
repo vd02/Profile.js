@@ -14,15 +14,17 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Frontend web developer currently working with React.js, with a knack of building interactive web applications. Young and motivated bachelor student willing to be an asset for an organization.",
+      "A penultimate-year computer science major looking for opportunities in the software engineering industry, Hard-working      individual with a passion for programming and strong foundations in data structures, algorithms, databases, and mathematics.",
     highlights: {
       bullets: [
-        "Frontend web development",
+        "Web development",
         "Responsive Design & Mobile-First Websites",
         "React",
         "Data Structures and Algorithms in Java",
+        "MERN Stack",
         "UX and UI",
-        "Currently learning to work on backend websites with Node.js",
+        "MySQL",
+        "Data Visualization",
       ],
       heading: "Here are a Few Highlights:",
     },
@@ -63,9 +65,12 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              {/* <a href="Resume.pdf" download="Varun_Dixit_Resume.pdf">
-                <button className="btn highlighted-btn">Get Resume</button>
-              </a> */}
+              <a
+                href="Resume_Varun_Dixit.pdf"
+                download="Resume_Varun_Dixit.pdf"
+              >
+                <button className="btn highlighted-btn mx-2">Get Resume</button>
+              </a>
             </div>
           </div>
         </div>
