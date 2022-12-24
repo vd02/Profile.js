@@ -43,7 +43,7 @@ export default function Profile() {
                     1200,
                     "Coder0️⃣1️⃣",
                     1200,
-                    "Sportsman⛹️‍♂️",
+                    "Athlete⛹️‍♂️",
                     1200,
                   ]}
                 />

@@ -98,11 +98,18 @@
   justify-content: space-evenly;
   height: 360px;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .resume-heading {
   display: flex;
   flex-direction: column;
+}
+
+.resume-heading1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .resume-main-heading {

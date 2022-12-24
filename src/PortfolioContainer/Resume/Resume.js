@@ -68,31 +68,24 @@ const Resume = (props) => {
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Healthify @SNU",
+      duration: { fromDate: "Sep, 22", toDate: "Nov, 22" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
+        "💻 Technologies Used: React, MongoDB, Node.js, Express.js, Figma 💻 Developed a full-stack web-based application to automate the working of the healthcare system at Shiv Nadar University. Features include authentication for students, doctors and admin, AI chatbot, appointment booking, patient record etc.",
       subHeading: "",
     },
     {
-      title: "React Dhaba ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Player Management System",
+      duration: { fromDate: "Oct, 22", toDate: "Nov, 22" },
       description:
-        "Online Food Ordering Website based on React with dynamic loading of menu and receiving of order details through Firebase Realtime Database.",
+        "💻 Technologies Used: MySQL, Python, HTML, CSS 💻 A basic CRUD application designed to manage players across all sports for a particular club at universities. Gained a strong understanding of deploying databases and implemented triggers, functions, procedures along with improving        query performance.",
       subHeading: "",
     },
     {
-      title: "Optical Character Recognition",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Social Media Network Project on Influence Maximization",
+      duration: { fromDate: "Feb, 22", toDate: "Apr, 22" },
       description:
-        "JavaScript based Optical Character Recognition (OCR) tool that reads custom written input with the help of Google and Microsoft enabled voice systems with modifiable pitch and voice rate.",
-      subHeading: "",
-    },
-    {
-      title: "Expense Tracker",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "React Expense Tracker that adds up all your credits and debits, displays them and shows up the total balance.",
+        "Worked on a research paper investigating the Influence Maximisation in Social Networks. Proposed proficient calculations and heuristics for the influence maximization problem using greedy approach, degree discount heuristics, independent cascade model and linear threshold model.",
       subHeading: "",
     },
   ];
@@ -105,7 +98,7 @@ const Resume = (props) => {
         fromDate={"2020"}
         toDate={"2024"}
         description={
-          "Relevant Coursework: 📝Introduction to Computing and Programming    📝Data Structures and Algorithms    📝Operating Systems    📝Social Information and Networks"
+          "Relevant Coursework: 📝Data Structures and Algorithms  📝Operating Systems    📝Database Systems    📝Social Information and Networks 📝Artificial Intelligence (AI) 📝Probability and Statistics  📝Object Oriented Programming (OOP’s)"
         }
       />
 
@@ -114,7 +107,7 @@ const Resume = (props) => {
         subHeading={"ISC BOARD"}
         fromDate={"2017"}
         toDate={"2019"}
-        description={"🔗Class 12th: 92.4%         🔗Class 10th: 92.8%"}
+        description={"🔗Class 12th: 92.4%"}
       />
     </div>,
 
@@ -124,8 +117,8 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"Photomath"}
           subHeading={"Content Curator – Freelance"}
-          fromDate={"May, 2020"}
-          toDate={"Present"}
+          fromDate={"July, 2020"}
+          toDate={"July, 2022"}
         />
         <div className="experience-description">
           {/* <span className="resume-description-text">
@@ -135,14 +128,17 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Creative Problem Solver and Math Expert.
+            Solved and reviewed over 2500+ math problems in the domain of
+            probability, statistics, calculus, vectors and algebra; provided
+            solutions using LaTeX, GeoGebra (proprietary software tool) and
+            Figma.
           </span>
           <br />
-          <span className="resume-description-text">
+          {/* <span className="resume-description-text">
             - Providing solutions to math problems using LaTeX and software like
             GeoGebra and Figma.{" "}
-          </span>
-          <br />
+          </span> */}
+          {/* <br /> */}
         </div>
       </div>
       <div className="experience-container">
@@ -151,10 +147,10 @@ const Resume = (props) => {
             "Plutonity Investment Advisory and Technology Pvt. Ltd.                                                                            "
           }
           subHeading={
-            "Frontend Developer Intern                                                                                                                 "
+            "Software Developer Intern                                                                                                                 "
           }
-          fromDate={"May"}
-          toDate={"Aug, 2021"}
+          fromDate={"July, 2021"}
+          toDate={"Sep, 21"}
         />
         <div className="experience-description">
           {/* <span className="resume-description-text">
@@ -164,12 +160,15 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Designed Frontend for the startup’s website using React and
-            Material UI.
+            Assisted in developing backend code snippets for multiple key
+            functions including user authentication and extracting spare change
+            from all the online payments. Gained experience working with AWS
+            Cloud services to deploy infrastructure (S3 & RDS).
           </span>
           <br />
           <span className="resume-description-text">
-            - Worked on the designing the UI and UX of the mobile app.{" "}
+            Worked on designing the UI/UX of the mobile application in React
+            Native using Material UI.{" "}
           </span>
           <br />
         </div>
